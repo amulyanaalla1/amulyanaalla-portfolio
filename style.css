@@ -1,11 +1,13 @@
+/* General Body and Typography */
+
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding-top: 60px;
     /* Space for the fixed navbar */
-    background-color: #0d1117;
+    background-color: #1a1e27;
     /* Dark charcoal background */
-    color: #e6e6e6;
+    color: #e0e0e0;
     /* Light gray text */
     line-height: 1.6;
     scroll-behavior: smooth;
@@ -16,23 +18,23 @@ body {
 /* Light Mode Styles */
 
 body.light-mode {
-    background-color: #ffffff;
-    color: #333;
+    background-color: #f0f2f5;
+    color: #333333;
 }
 
 body.light-mode h1,
 body.light-mode h2,
 body.light-mode h3 {
-    color: #1a4a4a;
-    /* A darker teal for light mode */
+    color: #e8a93e;
+    /* Accent color for headings in light mode */
 }
 
 body.light-mode a {
-    color: #1a4a4a;
+    color: #e8a93e;
 }
 
 body.light-mode a:hover {
-    color: #2b7a7a;
+    color: #d19430;
 }
 
 body.light-mode .intro-section-content {
@@ -40,26 +42,26 @@ body.light-mode .intro-section-content {
 }
 
 body.light-mode .profile-photo {
-    border: 5px solid #1a4a4a;
-    box-shadow: 0 0 20px rgba(26, 74, 74, 0.5);
+    border: 5px solid #e8a93e;
+    box-shadow: 0 0 20px rgba(232, 169, 62, 0.5);
 }
 
 body.light-mode .cta-button,
 body.light-mode .mode-toggle-button,
 body.light-mode .cert-view-btn {
-    background-color: #1a4a4a;
-    color: #fff;
+    background-color: #e8a93e;
+    color: #333333;
 }
 
 body.light-mode .cta-button:hover,
 body.light-mode .mode-toggle-button:hover,
 body.light-mode .cert-view-btn:hover {
-    background-color: #2b7a7a;
-    box-shadow: 0 5px 15px rgba(26, 74, 74, 0.4);
+    background-color: #d19430;
+    box-shadow: 0 5px 15px rgba(210, 150, 48, 0.4);
 }
 
 body.light-mode section:nth-child(even) {
-    background-color: #f0f0f0;
+    background-color: #ffffff;
 }
 
 body.light-mode .skill-item,
@@ -68,32 +70,32 @@ body.light-mode .education-item,
 body.light-mode .navbar,
 body.light-mode .footer,
 body.light-mode .contact-form-container {
-    background-color: #f8f9fa;
+    background-color: #ffffff;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 body.light-mode .cert-card {
-    background-color: #f8f9fa;
+    background-color: #ffffff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 body.light-mode .cert-card:hover {
-    background-color: #f0f0f0;
+    background-color: #f0f2f5;
 }
 
 body.light-mode .project-link,
 body.light-mode .social-link {
-    background-color: #1a4a4a;
-    color: #fff;
+    background-color: #e8a93e;
+    color: #333333;
 }
 
 body.light-mode .project-link:hover,
 body.light-mode .social-link:hover {
-    background-color: #2b7a7a;
+    background-color: #d19430;
 }
 
 body.light-mode .navbar .logo {
-    color: #1a4a4a;
+    color: #e8a93e;
 }
 
 body.light-mode .navbar nav a {
@@ -101,7 +103,7 @@ body.light-mode .navbar nav a {
 }
 
 body.light-mode .navbar nav a:hover {
-    color: #1a4a4a;
+    color: #e8a93e;
 }
 
 body.light-mode input[type="text"],
@@ -117,11 +119,11 @@ body.light-mode .skills-category h3 {
 }
 
 body.light-mode .skills-category h3::after {
-    background-color: #1a4a4a;
+    background-color: #e8a93e;
 }
 
 body.light-mode .cert-icon {
-    color: #1a4a4a;
+    color: #e8a93e;
     filter: none;
 }
 
@@ -134,18 +136,18 @@ body.light-mode .cert-issuer {
 }
 
 body.light-mode .cert-year {
-    color: #1a4a4a;
+    color: #e8a93e;
 }
 
 
-/* --Navbar --*/
+/* --- Navbar --- */
 
 .navbar {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    background-color: #161b22;
+    background-color: #242933;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
     padding: 10px 0;
     z-index: 1000;
@@ -161,7 +163,7 @@ body.light-mode .cert-year {
 .navbar .logo {
     font-size: 1.5rem;
     font-weight: bold;
-    color: #008080;
+    color: #e8a93e;
 }
 
 .navbar nav {
@@ -171,18 +173,18 @@ body.light-mode .cert-year {
 }
 
 .navbar nav a {
-    color: #e6e6e6;
+    color: #e0e0e0;
     font-weight: 500;
     transition: color 0.3s ease;
 }
 
 .navbar nav a:hover {
-    color: #008080;
+    color: #e8a93e;
 }
 
 .mode-toggle-button {
-    background-color: #008080;
-    color: #fff;
+    background-color: #e8a93e;
+    color: #333333;
     border: none;
     padding: 8px 12px;
     border-radius: 50px;
@@ -192,12 +194,12 @@ body.light-mode .cert-year {
 }
 
 .mode-toggle-button:hover {
-    background-color: #00a0a0;
+    background-color: #d19430;
     transform: scale(1.05);
 }
 
 
-/* -- General Section Styles -- */
+/* --- General Section Styles --- */
 
 .container {
     max-width: 1200px;
@@ -209,8 +211,8 @@ h1,
 h2,
 h3 {
     font-weight: 600;
-    color: #008080;
-    /* Teal for headings */
+    color: #e8a93e;
+    /* Accent color for headings */
     margin-top: 0;
 }
 
@@ -229,24 +231,24 @@ h2::after {
     transform: translateX(-50%);
     width: 80px;
     height: 4px;
-    background-color: #008080;
-    /* Teal underline for headings */
+    background-color: #e8a93e;
+    /* Accent color underline for headings */
     border-radius: 2px;
     transition: background-color 0.3s ease;
 }
 
 body.light-mode h2::after {
-    background-color: #1a4a4a;
+    background-color: #e8a93e;
 }
 
 a {
-    color: #008080;
+    color: #e8a93e;
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
 a:hover {
-    color: #00a0a0;
+    color: #d19430;
 }
 
 section {
@@ -254,11 +256,11 @@ section {
 }
 
 section:nth-child(even) {
-    background-color: #161b22;
+    background-color: #242933;
 }
 
 
-/* --Introduction Section -- */
+/* --- Introduction Section --- */
 
 .intro-section {
     display: flex;
@@ -280,9 +282,9 @@ section:nth-child(even) {
     width: 200px;
     height: 200px;
     border-radius: 50%;
-    border: 5px solid #008080;
+    border: 5px solid #e8a93e;
     object-fit: cover;
-    box-shadow: 0 0 20px rgba(0, 128, 128, 0.5);
+    box-shadow: 0 0 20px rgba(232, 169, 62, 0.5);
     animation: pulse 2s infinite ease-in-out;
 }
 
@@ -300,7 +302,7 @@ section:nth-child(even) {
 
 .intro-text h1 {
     font-size: 4rem;
-    color: #008080;
+    color: #e8a93e;
     margin-bottom: 10px;
 }
 
@@ -311,8 +313,8 @@ section:nth-child(even) {
 }
 
 .cta-button {
-    background-color: #008080;
-    color: #fff;
+    background-color: #e8a93e;
+    color: #333333;
     padding: 12px 25px;
     border-radius: 50px;
     font-weight: bold;
@@ -321,13 +323,13 @@ section:nth-child(even) {
 }
 
 .cta-button:hover {
-    background-color: #00a0a0;
+    background-color: #d19430;
     transform: translateY(-3px);
-    box-shadow: 0 5px 15px rgba(0, 128, 128, 0.4);
+    box-shadow: 0 5px 15px rgba(210, 150, 48, 0.4);
 }
 
 
-/* --Skills Section -- */
+/* --- Skills Section --- */
 
 .skills-category {
     margin-bottom: 50px;
@@ -336,7 +338,7 @@ section:nth-child(even) {
 .skills-category h3 {
     text-align: center;
     font-size: 2rem;
-    color: #e6e6e6;
+    color: #e0e0e0;
     margin-bottom: 20px;
     position: relative;
 }
@@ -349,7 +351,7 @@ section:nth-child(even) {
     transform: translateX(-50%);
     width: 60px;
     height: 3px;
-    background-color: #008080;
+    background-color: #e8a93e;
     border-radius: 2px;
 }
 
@@ -358,7 +360,7 @@ body.light-mode .skills-category h3 {
 }
 
 body.light-mode .skills-category h3::after {
-    background-color: #1a4a4a;
+    background-color: #e8a93e;
 }
 
 .skills-grid {
@@ -369,7 +371,7 @@ body.light-mode .skills-category h3::after {
 }
 
 .skill-item {
-    background-color: #161b22;
+    background-color: #242933;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -378,12 +380,12 @@ body.light-mode .skills-category h3::after {
 
 .skill-item:hover {
     transform: translateY(-5px);
-    background-color: #1e242d;
+    background-color: #2e3541;
 }
 
 .skill-item i {
     font-size: 2.5rem;
-    color: #008080;
+    color: #e8a93e;
     margin-bottom: 10px;
 }
 
@@ -397,7 +399,7 @@ body.light-mode .skills-category h3::after {
 }
 
 .project-card {
-    background-color: #161b22;
+    background-color: #242933;
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -413,21 +415,21 @@ body.light-mode .skills-category h3::after {
 }
 
 .project-card h3 {
-    color: #008080;
+    color: #e8a93e;
     font-size: 1.5rem;
     margin-bottom: 10px;
 }
 
 .project-card p.tech-stack {
-    color: #8b949e;
+    color: #b0b0b0;
     font-size: 0.9rem;
     margin-bottom: 15px;
 }
 
 .project-link {
     display: inline-block;
-    background-color: #008080;
-    color: #fff;
+    background-color: #e8a93e;
+    color: #333333;
     padding: 8px 15px;
     border-radius: 50px;
     text-align: center;
@@ -436,14 +438,14 @@ body.light-mode .skills-category h3::after {
 }
 
 .project-link:hover {
-    background-color: #00a0a0;
+    background-color: #d19430;
 }
 
 
 /* --- Education Section --- */
 
 .education-item {
-    background-color: #161b22;
+    background-color: #242933;
     padding: 25px;
     border-radius: 8px;
     margin-bottom: 20px;
@@ -452,18 +454,18 @@ body.light-mode .skills-category h3::after {
 
 .education-item h3 {
     font-size: 1.3rem;
-    color: #008080;
+    color: #e8a93e;
 }
 
 .education-item .institution {
     font-weight: bold;
-    color: #757070;
+    color: #e0e0e0;
     margin-bottom: 5px;
 }
 
 .education-item .duration {
     font-style: italic;
-    color: #1a1a1a;
+    color: #b0b0b0;
     font-size: 0.9rem;
 }
 
@@ -478,7 +480,7 @@ body.light-mode .skills-category h3::after {
 }
 
 .cert-card {
-    background-color: #1a1e27;
+    background-color: #242933;
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -492,37 +494,37 @@ body.light-mode .skills-category h3::after {
 .cert-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
-    background-color: #242933;
+    background-color: #2e3541;
 }
 
 .cert-icon {
     font-size: 3rem;
-    color: #008080;
+    color: #e8a93e;
     margin-bottom: 15px;
-    filter: drop-shadow(0 0 5px rgba(0, 128, 128, 0.5));
+    filter: drop-shadow(0 0 5px rgba(232, 169, 62, 0.5));
 }
 
 .cert-card h3 {
     font-size: 1.5rem;
-    color: #e6e6e6;
+    color: #e0e0e0;
     margin-bottom: 5px;
 }
 
 .cert-issuer {
-    color: #8b949e;
+    color: #b0b0b0;
     font-size: 1rem;
     margin-bottom: 5px;
 }
 
 .cert-year {
-    color: #008080;
+    color: #e8a93e;
     font-weight: bold;
     margin-bottom: 20px;
 }
 
 .cert-view-btn {
-    background-color: #008080;
-    color: #fff;
+    background-color: #e8a93e;
+    color: #333333;
     border: none;
     padding: 10px 20px;
     border-radius: 50px;
@@ -532,7 +534,7 @@ body.light-mode .skills-category h3::after {
 }
 
 .cert-view-btn:hover {
-    background-color: #00a0a0;
+    background-color: #d19430;
     transform: scale(1.05);
 }
 
@@ -593,7 +595,7 @@ body.light-mode .skills-category h3::after {
 .contact-form-container {
     max-width: 600px;
     margin: 0 auto 40px;
-    background-color: #161b22;
+    background-color: #242933;
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -617,8 +619,8 @@ body.light-mode .skills-category h3::after {
     padding: 10px;
     border: 1px solid #30363d;
     border-radius: 5px;
-    background-color: #0d1117;
-    color: #e6e6e6;
+    background-color: #1a1e27;
+    color: #e0e0e0;
     font-size: 1rem;
     transition: border-color 0.3s ease, background-color 0.3s ease;
 }
@@ -630,8 +632,8 @@ body.light-mode .skills-category h3::after {
 .contact-form input:focus,
 .contact-form textarea:focus {
     outline: none;
-    border-color: #008080;
-    box-shadow: 0 0 5px rgba(0, 128, 128, 0.5);
+    border-color: #e8a93e;
+    box-shadow: 0 0 5px rgba(232, 169, 62, 0.5);
 }
 
 .social-links {
@@ -644,15 +646,15 @@ body.light-mode .skills-category h3::after {
     display: inline-flex;
     align-items: center;
     gap: 8px;
-    background-color: #008080;
-    color: #fff;
+    background-color: #e8a93e;
+    color: #333333;
     padding: 10px 20px;
     border-radius: 50px;
     transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 .social-link:hover {
-    background-color: #00a0a0;
+    background-color: #d19430;
     transform: translateY(-3px);
 }
 
@@ -662,8 +664,8 @@ body.light-mode .skills-category h3::after {
 .footer {
     text-align: center;
     padding: 20px;
-    background-color: #161b22;
-    color: #8b949e;
+    background-color: #242933;
+    color: #b0b0b0;
     font-size: 0.9rem;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
@@ -674,4 +676,41 @@ body.light-mode .skills-category h3::after {
     background-color: #30363d;
     margin: 20px 0;
     transition: background-color 0.3s ease;
+}
+
+
+/* --- Mobile Responsiveness for Navbar --- */
+
+@media (max-width: 768px) {
+    .navbar .container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .navbar .logo {
+        margin-bottom: 10px;
+    }
+    .navbar nav {
+        width: 100%;
+        overflow-x: auto;
+        white-space: nowrap;
+        justify-content: flex-start;
+        padding-bottom: 5px;
+    }
+    /* Hide the scrollbar for a cleaner look */
+    .navbar nav::-webkit-scrollbar {
+        height: 5px;
+    }
+    .navbar nav::-webkit-scrollbar-thumb {
+        background-color: #e8a93e;
+        border-radius: 50px;
+    }
+    /* Style for the scrollbar track */
+    .navbar nav::-webkit-scrollbar-track {
+        background: #242933;
+        border-radius: 50px;
+    }
+    .navbar nav a {
+        padding: 5px 15px;
+        display: inline-block;
+    }
 }
